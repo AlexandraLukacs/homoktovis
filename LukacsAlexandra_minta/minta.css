@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 245, 220);
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+    background-image: url("hatter.png");
+}
+
+header {
+    grid-area: h;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10px 10% auto;
+    grid-template-areas: 
+    "h h"
+    "as se"
+    "f n";
+    gap: 10px;
+    width: 90%;
+    max-width: 900px;
+}
+
+#tartalmazo {
+    margin: 0px auto;
+}
+
+header {
+    background-image: url("hatter.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+header h1 {
+    border-top: 1px black solid;
+}
+
+header h1 {
+    font-variant: small-caps;
+}
+
+header {
+    height: 300px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: orange;
+    display: none;
+    display: hidden;
+    opacity: 0;
+    visibility: 0;
+}
+
+nav * {
+    font-weight: bold;
+}
+
+article p {
+    text-align: justify;
+}
+
+article img {
+    float: right;
+}
+
+li {
+    list-style-type: square;
+    font-style: italic;
+    font-style: oblique;
+}
+
+@media screen and ( max-width: 700px ) {
+    main *, nav a {
+        display: block;
+    }
+}
+
